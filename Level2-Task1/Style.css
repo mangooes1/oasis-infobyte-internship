@@ -6,76 +6,67 @@
 }
 
 body {
-    min-width: 100vh;
+    min-height: 100vh;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #008DDA;
-   
+    display: grid;
+    place-items: center;
+    background: #FDF4F5;
 }
 
 .calculator {
     padding: 15px;
-    border: 2px solid #fff;
+    /* box-shadow: 0 0 15px #000; */
+    border: 2px solid #5AB2FF;
     border-radius: 15px;
-    background-color: #eee;
+    background-color: #A0DEFF;
 }
 
 .display input {
-    width: 238px;
+    width: 280px;
     border: none;
     border-radius: 10px;
+    border: 3px solid #5AB2FF;
     outline: none;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
-    background-color: #68D2E8;
-    color: #000;
+    background: #fff;
+    color: #313131;
     font-size: 40px;
     text-align: right;
     cursor: pointer;
 }
 
-.design {
-    margin-top: 10px;
-    width: 45px;
-    height: 40px;
-    background: #68D2E8;
-    color: #222831;
-    font-size: 14px;
+input::placeholder {
+    color: #fff;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: #fff;
+    color: #313131;
+    font-size: 16px;
     font-weight: 600;
     border: 0;
-    border-radius: 10px;
-    outline: 2px solid #fff;
-    /* outline-offset: 3px;
-    box-shadow: -5px -6px 15px #fff; */
+    border-radius: 7px;
+    outline: 2px solid #5AB2FF;
+    outline-offset: 3px;
+    box-shadow: -5px, -6px 15px #000;
     cursor: pointer;
 }
 
-.second-design {
-    margin-top: 10px;
-    width: 45px;
-    height: 40px;
-    background: #03AED2;
-    color: #31363F;
-    font-size: 14px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 10px;
-    outline: 2px solid #fff;
-    cursor: pointer;
+button:active {
+    background: #000;
+    transform: translate(2px, 2px);
 }
+.opr{
+    color:#615EFC ;
 
-.enter {
-    margin-top: 10px;
-    width: 93px;
-    height: 40px;
-    background: #03AED2;
-    color: #000;
-    font-size: 14px;
+    font-weight: 700;
+}
+#eqBtn{
+    background-color: #313131;
+    color: #FDF4F5;
     font-weight: 900;
-    border: 0;
-    border-radius: 10px;
-    outline: 2px solid #fff;
-    cursor: pointer;
 }
